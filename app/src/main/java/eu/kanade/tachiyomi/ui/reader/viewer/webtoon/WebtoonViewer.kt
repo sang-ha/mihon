@@ -122,8 +122,8 @@ class WebtoonViewer(val activity: ReaderActivity, val isContinuous: Boolean = tr
             )
             when (config.navigator.getAction(pos)) {
                 NavigationRegion.MENU -> activity.toggleMenu()
-                NavigationRegion.NEXT, NavigationRegion.RIGHT -> scrollDown()
-                NavigationRegion.PREV, NavigationRegion.LEFT -> scrollUp()
+                NavigationRegion.NEXT, NavigationRegion.RIGHT -> { }
+                NavigationRegion.PREV, NavigationRegion.LEFT -> { }
             }
         }
         recycler.longTapListener = f@{ event ->
